@@ -2,12 +2,12 @@
 
 Practical developer utilities, scientific research tools, and automation tools. A focus on data visualization, statistics, statistical analysis, and reproducible scientific workflows.
 
-This portfolio emphasizes useful, inspectable tools: concrete use cases, documented inputs and outputs, reproducible examples, and runnable tests.
+Start with a small problem worth solving: inspect a dataset, check a dependency graph, or turn measurements into a useful plot. Each tool gives you a concrete use case, clear inputs and outputs, a reproducible example, and runnable tests. Open a directory and take one for a spin.
 
 ## Explore
 
 - [Browse the tool index](INDEX.md)
-- [Read the accompanying research notes](https://github.com/datavizy/logic-notes)
+- [Read the accompanying research notes](https://github.com/datavizy/datavizy-research)
 
 Each dated tool directory contains:
 

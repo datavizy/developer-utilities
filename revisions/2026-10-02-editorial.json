@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "policy_id": "traditional-punctuation-engaging-technical-v1",
+  "research_title": "DataVizy Research",
+  "repository": "datavizy/developer-utilities",
+  "previous_repository": "datavizy/developer-utilities",
+  "changes": [
+    "Traditional punctuation; no em dashes.",
+    "More inviting introductions, transitions, and practical reading guidance.",
+    "Updated research collection name and portfolio links."
+  ],
+  "validation": {
+    "em_dash_check": "passed",
+    "technical_examples_preserved": true,
+    "article_words": 1851,
+    "existing_tools_and_tests_unchanged": true
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "before_sha256": "18cd3e4f569317108dc4c4ccb801cb0aa66e3792c1e9e0409f8877f4eb7b92d6",
+      "after_sha256": "67f99623f0be356c33870e2a3c8a230a12431ce41176a2e02b777f5f661f4228"
+    },
+    {
+      "path": "tools/2026-10-02/csv-visualize/README.md",
+      "before_sha256": "e4318a382de2160cb9994df8429f9b3e0154320767840dfe11faa3db898afeb6",
+      "after_sha256": "e85c27eaa9372bc52d2f495193e97018d54fffc4c27c1ecfc2851944fc0d1fd3"
+    }
+  ]
+}

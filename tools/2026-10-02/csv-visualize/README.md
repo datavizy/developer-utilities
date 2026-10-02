@@ -1,6 +1,6 @@
 ## Overview
 
-`csv-visualize.sh` exports a labeled scatter plot or histogram from a CSV file using Matplotlib’s headless `Agg` renderer. It is useful for a quick, reproducible visual check while cleaning data, reviewing measurements, or communicating a descriptive pattern. It does not fit a statistical model or establish significance or causality.
+A table of measurements is a good place to start. A plot gives you another way to explore it. `csv-visualize.sh` exports a labeled scatter plot or histogram from your CSV using Matplotlib's headless `Agg` renderer. Try it while cleaning data, reviewing measurements, or sharing a descriptive pattern. You get a reproducible visual check without opening a desktop application. The tool does not fit a statistical model or establish significance or causality.
 
 ## Prerequisites
 
@@ -32,9 +32,9 @@ bash csv-visualize.sh --file measurements.csv --x temperature --kind histogram -
 
 `--kind` accepts `scatter` or `histogram`; the default is `scatter`. `--title` is optional. Output must have an `.svg` or `.png` extension. Existing output files are never replaced: choose a new filename for each run.
 
-## Results and implementation
+## Read the picture and the counts
 
-The plot labels the x-axis with the selected x column, labels the scatter y-axis with its selected y column or the histogram y-axis “Count,” and displays the requested title. Both plot types include a light grid. On success, standard output contains JSON with the output path, plot kind, number of plotted observations, and number of omitted rows. These counts help make missing-data handling visible; they do not explain why a row was omitted.
+The plot labels the x-axis with the selected x column, labels the scatter y-axis with its selected y column or the histogram y-axis “Count,” and displays the requested title. Both plot types include a light grid. On success, standard output contains JSON with the output path, plot kind, number of plotted observations, and number of omitted rows. Read those counts alongside the picture. They make missing-data handling visible, although they do not explain why a row was omitted.
 
 The script reads the CSV once, converts selected fields to floating-point values, retains complete finite observations, and then passes them to Matplotlib. Reading and retaining data takes $O(n)$ time and $O(n)$ memory for $n$ rows, apart from plotting and histogram bin selection. A scatter plot displays the retained pairs; a histogram uses Matplotlib’s automatic bin selection. Results are descriptive summaries of the supplied values, not inferential tests.
 
