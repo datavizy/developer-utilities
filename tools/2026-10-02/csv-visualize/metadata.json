@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Duplicate Keys, Join Multiplication, and the Meaning of a Row",
+  "article": "articles/2026-10-02-duplicate-keys-join-multiplication.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "CSV Visualizer: Labeled Scatter Plots and Histograms",
+  "utility_use_case": "After joining instrument readings to station metadata, a researcher can export a labeled scatter plot of two numeric measurements or a histogram of one measurement to inspect distributions and possible anomalies. The JSON counts make omissions explicit. The visualization supports exploratory review; it cannot determine whether duplicated rows are errors, validate join keys, or support significance or causal claims.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "data-joins",
+    "reproducible-research",
+    "python"
+  ],
+  "source": {
+    "book_label": "Data Science Fundamentals with R, Python, and Open Data -- Marco Cremonini",
+    "section_title": "10.1.5 Duplicated Keys",
+    "book_sha256": "0df0b6a1b633d25cf7bfdaeb2d6e8510ae2a7764384417a6835f8e34f0509062",
+    "excerpt_sha256": "d3925464d14544750210f4152f651c62b8e8a0febf1ca2e2f6db76a2bc3e5195",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0d3f6ae5810f747f016ac00ebd171887d0b8707a8887152daf",
+    "usage": {
+      "input_tokens": 4567,
+      "input_tokens_details": {
+        "cache_write_tokens": 4564,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4110,
+      "output_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "total_tokens": 8677
+    },
+    "generated_at": "2026-10-02T20:06:54.500434+00:00",
+    "estimated_standard_usd": 0.0025117,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_03941db9355f9c11016ac01208b95c87d0a73d5f8b7e9431ce",
+      "usage": {
+        "input_tokens": 8292,
+        "input_tokens_details": {
+          "cache_write_tokens": 8289,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1832,
+        "output_tokens_details": {
+          "reasoning_tokens": 1740
+        },
+        "total_tokens": 10124
+      },
+      "reviewed_at": "2026-10-02T20:20:43.117883+00:00",
+      "summary": "Corrected the input description to match the utility’s behavior: it omits selected values that are missing, nonnumeric, or nonfinite.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Selected columns must exist and contain numeric values.",
+          "new": "Selected columns must exist; only numeric, finite values are plotted."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0017452000000000001
+    }
+  },
+  "validation": {
+    "article_words": 1811,
+    "glossary_terms": 9,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed",
+    "independent_technical_review": "passed"
+  }
+}
