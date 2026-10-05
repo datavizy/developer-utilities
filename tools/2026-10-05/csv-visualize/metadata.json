@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Events to Evidence: A Practical Primer on Discrete Probability",
+  "article": "articles/2026-10-05-from-events-to-evidence-discrete-probability.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "CSV Visualizer",
+  "utility_use_case": "A researcher receives a CSV export of paired sensor readings and needs a quick, reproducible check for trends, unusual ranges, and incomplete records before formal analysis. The CSV Visualizer creates a labeled scatter plot or histogram and prints the number of finite observations retained and rows omitted. Saving the image and its command with the analysis notes makes this exploratory step auditable. The resulting visualization is descriptive only: it does not test hypotheses, estimate uncertainty, or establish causality.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "probability",
+    "statistics",
+    "data-visualization",
+    "scientific-computing",
+    "reproducibility",
+    "python"
+  ],
+  "source": {
+    "book_label": "Problems from the Discrete to the Continuous_ Probability, Number Theory, Graph Theory, and Combinatorics",
+    "section_title": "1 0 < , limn!1",
+    "book_sha256": "88c6092a6cde2a106fbc653b16dbc3bd19e879d4c3f8b8d6546e5d14e5d5d9a6",
+    "excerpt_sha256": "d7f3e4fe406ced2b36754dff1c99e81bcab2555c4e39a9e91c2e40257cd65a6d",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_00d94db7f270af98016ac3c9e8d77887d08b875dfea4bf8ce6",
+    "usage": {
+      "input_tokens": 3002,
+      "input_tokens_details": {
+        "cache_write_tokens": 2999,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4309,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 7311
+    },
+    "generated_at": "2026-10-05T16:02:25.848575+00:00",
+    "estimated_standard_usd": 0.0024546999999999998,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0a470775f0b264f2016ac3ca12239887d08e162d63900eaf10",
+      "usage": {
+        "input_tokens": 6982,
+        "input_tokens_details": {
+          "cache_write_tokens": 6979,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1745,
+        "output_tokens_details": {
+          "reasoning_tokens": 1627
+        },
+        "total_tokens": 8727
+      },
+      "reviewed_at": "2026-10-05T16:02:49.637746+00:00",
+      "summary": "Corrected the infinite-space relative entropy description. Recomputed the displayed probability, expectation, variance, standard deviation, exercise answers, and binary relative entropy; they are correct. The utility README matches the executable source.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "Otherwise, the sum may still need convergence conditions on an infinite space.",
+          "new": "Otherwise, the sum is well-defined as a nonnegative extended value, though it may be infinite."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015707
+    }
+  },
+  "validation": {
+    "article_words": 1538,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
