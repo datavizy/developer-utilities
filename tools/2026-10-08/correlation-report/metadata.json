@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Where Names Live: Environments, Scope, and Reproducible Analysis",
+  "article": "articles/2026-10-08-where-names-live-environments-scope-reproducible-analysis.md",
+  "utility_kind": "correlation-report",
+  "utility_title": "Correlation Report",
+  "utility_use_case": "A researcher receives repeated sensor measurements in a CSV and needs a quick, reproducible first check of the linear association between a configured setting and a measured response. The command names the file and both columns explicitly, reports how many pairs it used, and returns correlation plus a fitted line for follow-up plotting and investigation. It is an exploratory summary, not a test of significance or causation.",
+  "domain": "statistical analysis and exploratory research",
+  "tags": [
+    "R",
+    "statistics",
+    "data-visualization",
+    "reproducibility",
+    "scope",
+    "correlation"
+  ],
+  "source": {
+    "book_label": "The book of R - a first course in programming and statistics",
+    "section_title": "9.1.1 Environments",
+    "book_sha256": "2bb59d04af4e703833244d45f5a905f02fb6d90fab0a257acf3a1bf680963b7e",
+    "excerpt_sha256": "8e86890a60edf6492d40bb71e64c364b454075fbe96b0cdf93720f852a92d39c",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_08f9a0762d768e29016ac7be62118487d092d0ac3fa0ff7c72",
+    "usage": {
+      "input_tokens": 2844,
+      "input_tokens_details": {
+        "cache_write_tokens": 2841,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4244,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 7088
+    },
+    "generated_at": "2026-10-08T16:02:16.368258+00:00",
+    "estimated_standard_usd": 0.0024064,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b06869c75970a9d016ac7be88b9ec87d0921b1b50098a2829",
+      "usage": {
+        "input_tokens": 6801,
+        "input_tokens_details": {
+          "cache_write_tokens": 6798,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1774,
+        "output_tokens_details": {
+          "reasoning_tokens": 1619
+        },
+        "total_tokens": 8575
+      },
+      "reviewed_at": "2026-10-08T16:02:40.717497+00:00",
+      "summary": "The article’s worked statistics and environment explanations are correct. The README needed to specify Python 3.8 or later and clarify that CSV parsing errors are not caught by the utility.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Python 3 available as `python3`.",
+          "new": "Python 3.8 or later available as `python3`."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Argument, file, input, and calculation errors are reported through the command-line parser.",
+          "new": "Caught argument, file, input, and calculation errors are reported through the command-line parser; CSV parsing errors are not caught."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015670999999999999
+    }
+  },
+  "validation": {
+    "article_words": 1846,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
