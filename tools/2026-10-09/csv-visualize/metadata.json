@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Learning Resources to Reproducible Plots",
+  "article": "articles/2026-10-09-learning-resources-reproducible-plots.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "csv-visualize",
+  "utility_use_case": "A researcher receives a CSV of paired instrument readings and wants a quick, shareable check for a trend or unusual points before building a fuller analysis. The article’s emphasis on a deliberate learning path and a tidy project structure motivates an engineering workflow: keep source data, notes, and generated figures distinct; use a project-local environment; and record the exact command used to make the figure. The utility then exports a labeled plot and reports how many rows it used or omitted. This is an application inspired by the book’s general guidance on continuing to learn and organizing Python work. The book does not specify this utility, its implementation, or its plotting behavior.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "python",
+    "reproducibility",
+    "scientific-computing"
+  ],
+  "source": {
+    "book_label": "Pandas for Everyone- Python Data Analysis",
+    "section_title": "20.5 Other Resources",
+    "book_sha256": "5c3c2e7fa97cee5ca66cd120ad3a2ccd50652afafea6ece853663ccdd6e575be",
+    "excerpt_sha256": "bfa3b61f5ae2be9370cc002af80131e7cd8c1428a4a8008fdfeb11bdf5e01d8c",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_04a8fe964fdddf16016ac90fdd2c6c87d0957911873b09cdba",
+    "usage": {
+      "input_tokens": 5708,
+      "input_tokens_details": {
+        "cache_write_tokens": 5705,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4139,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 9847
+    },
+    "generated_at": "2026-10-09T16:02:09.652029+00:00",
+    "estimated_standard_usd": 0.0026403000000000004,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b8def35f781b0d1016ac91001eb1087d0a8dacf011aded576",
+      "usage": {
+        "input_tokens": 9479,
+        "input_tokens_details": {
+          "cache_write_tokens": 9476,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1301,
+        "output_tokens_details": {
+          "reasoning_tokens": 1250
+        },
+        "total_tokens": 10780
+      },
+      "reviewed_at": "2026-10-09T16:02:27.624677+00:00",
+      "summary": "The worked-example arithmetic checks out, and the article and README accurately describe the supplied source and utility behavior.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015984
+    }
+  },
+  "validation": {
+    "article_words": 1692,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
