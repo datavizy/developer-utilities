@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Scraped Records to Honest Visual Evidence",
+  "article": "articles/2026-10-13-scraped-data-to-honest-visual-evidence.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "csv-statistics: Reproducible summaries from a numeric CSV column",
+  "utility_use_case": "A researcher has exported instrument readings to a CSV and needs a repeatable first-pass summary before building a visualization. Running the utility produces a JSON record that can be archived with the dataset or consumed by another script. The counts of missing and invalid cells make basic exclusions visible, while the seeded percentile bootstrap provides an uncertainty summary conditional on the observed values and the resampling assumptions. It is a descriptive workflow aid, not a hypothesis test or a causal analysis.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "bootstrap",
+    "web-scraping",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "Practical Web Scraping for Data Science_ Best Practices and Examples with Python",
+    "section_title": "233 Chapter 9 examples",
+    "book_sha256": "4861bc4e3b98d2dcfddbe10de416856c47d0827087379535ba9aceba129f1538",
+    "excerpt_sha256": "bc50e07fc7480a4c99914dc9384df71f6cd949cd7c53bfde49cb4acceeaf346b",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0f8aafdc1e9afd49016ace86ad292887d0b9e234eb03ecea6e",
+    "usage": {
+      "input_tokens": 6416,
+      "input_tokens_details": {
+        "cache_write_tokens": 6413,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3674,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 10090
+    },
+    "generated_at": "2026-10-13T19:30:34.218049+00:00",
+    "estimated_standard_usd": 0.0024786,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0c30bb3bbdb2b7e7016ace86da7df087d08690a520c630bb14",
+      "usage": {
+        "input_tokens": 9925,
+        "input_tokens_details": {
+          "cache_write_tokens": 9922,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2123,
+        "output_tokens_details": {
+          "reasoning_tokens": 1953
+        },
+        "total_tokens": 12048
+      },
+      "reviewed_at": "2026-10-13T19:31:03.118601+00:00",
+      "summary": "Corrected the README to clarify which errors the utility reports through the argument parser and to disclose arithmetic overflow for extreme finite inputs.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Errors are reported through the argument parser and result in a nonzero exit status.",
+          "new": "Argument errors and handled input errors are reported through the argument parser and result in a nonzero exit status."
+        },
+        {
+          "field": "utility_readme",
+          "old": "A seed cannot correct selection bias, and more resamples reduce Monte Carlo variability without fixing poor data.",
+          "new": "A seed cannot correct selection bias, and more resamples reduce Monte Carlo variability without fixing poor data. Extreme finite values can still cause arithmetic overflow during summary or resampling calculations."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.002054
+    }
+  },
+  "validation": {
+    "article_words": 1583,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
