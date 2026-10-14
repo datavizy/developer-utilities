@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Reading the Surface: What Black–Scholes–Merton Call Greeks Tell You",
+  "article": "articles/2026-10-14-reading-black-scholes-merton-call-greeks.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A Quick Data-Quality Pass",
+  "utility_use_case": "Before calculating or plotting measurements by treatment and time point, a researcher runs the profiler to count blank cells, identify records with inconsistent field counts, and inspect the numeric range of each field. They use the JSON as a repeatable intake check, then apply domain-specific validation and analysis separately. This catches basic CSV issues without implying that the descriptive summaries establish significance or causality.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "statistics",
+    "data-visualization",
+    "options",
+    "python",
+    "reproducibility",
+    "data-quality"
+  ],
+  "source": {
+    "book_label": "Derivatives Analytics with Python- Data Analysis, Models",
+    "section_title": "5.6.3 Script for BSM Call Greeks",
+    "book_sha256": "db3be98246f15955f729611eb424a001934ed9e95f8a34e75bd2c4bdcb4153e3",
+    "excerpt_sha256": "c445ec4bc34520180ee39d8194ff60c68e95067358241cae376dd0585e067495",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_06e1047be6521635016acfa75f07dc87d0b79b3dbb6aae5918",
+    "usage": {
+      "input_tokens": 2609,
+      "input_tokens_details": {
+        "cache_write_tokens": 2606,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4229,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 6838
+    },
+    "generated_at": "2026-10-14T16:02:13.320981+00:00",
+    "estimated_standard_usd": 0.0023754,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0808c2ea98fe192d016acfa7859e7c87d0be47a72a5c77ba34",
+      "usage": {
+        "input_tokens": 6414,
+        "input_tokens_details": {
+          "cache_write_tokens": 6411,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1393,
+        "output_tokens_details": {
+          "reasoning_tokens": 1256
+        },
+        "total_tokens": 7807
+      },
+      "reviewed_at": "2026-10-14T16:02:32.436990+00:00",
+      "summary": "Corrected gamma units and clarified that ragged-row identifiers count logical CSV records, not physical lines.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "per squared price unit.",
+          "new": "per underlying-price unit."
+        },
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` lists their one-based file line numbers when their field count differs from the header.",
+          "new": "`ragged_rows` lists their logical CSV record numbers, starting at 2 because the header is record 1, when their field count differs from the header."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0013379000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1586,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
