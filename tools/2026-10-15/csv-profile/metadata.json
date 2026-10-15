@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Editing Matrices Without Losing Track of Their Shape",
+  "article": "articles/2026-10-15-editing-matrices-without-losing-track-of-their-shape.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A First-Pass Data Quality Check",
+  "utility_use_case": "A researcher receives instrument-exported measurements and wants to know whether the file has blank cells, inconsistent row widths, or plausible numeric ranges before plotting or fitting a model. Running `csv-profile` provides a reproducible structural and descriptive checkpoint. The researcher can then investigate flagged rows and define any exclusion or correction rule separately, preserving the original file and avoiding unsupported statistical conclusions.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "R",
+    "matrices",
+    "statistics",
+    "data-quality",
+    "csv",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "The book of R - a first course in programming and statistics",
+    "section_title": "3.2.2 Omitting and Overwriting",
+    "book_sha256": "2bb59d04af4e703833244d45f5a905f02fb6d90fab0a257acf3a1bf680963b7e",
+    "excerpt_sha256": "c82fb6a99e6920918a90673a9f0e4aa04f3b99b7b3560676e2cfe14b31565b6e",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0b813d0c2b649333016ad0f8e7c4a087d0abc829c921c7b0c3",
+    "usage": {
+      "input_tokens": 2769,
+      "input_tokens_details": {
+        "cache_write_tokens": 2766,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3998,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 6767
+    },
+    "generated_at": "2026-10-15T16:02:19.156642+00:00",
+    "estimated_standard_usd": 0.0022759,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0da844e76cfdd021016ad0f90b77dc87d09634ec2cd6c69574",
+      "usage": {
+        "input_tokens": 6517,
+        "input_tokens_details": {
+          "cache_write_tokens": 6514,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2121,
+        "output_tokens_details": {
+          "reasoning_tokens": 1881
+        },
+        "total_tokens": 8638
+      },
+      "reviewed_at": "2026-10-15T16:02:49.852729+00:00",
+      "summary": "Corrected the documented CLI options and clarified that ragged-row numbers count logical CSV records. Documented the overflow limitation for sums of extreme finite values.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "The only supported option is the required `--file` path. The launcher uses",
+          "new": "The only data option is the required `--file` path; argparse also provides `--help`. The launcher uses"
+        },
+        {
+          "field": "utility_readme",
+          "old": "using line numbers that start at 2 for the first data record.",
+          "new": "using CSV record numbers that start at 2 for the first data record."
+        },
+        {
+          "field": "utility_readme",
+          "old": "It does not infer dates, recognize custom missing-value tokens such as `NA` as missing, validate units, detect outliers, or repair malformed rows.",
+          "new": "It does not infer dates, recognize custom missing-value tokens such as `NA` as missing, validate units, detect outliers, or repair malformed rows. With extreme finite values, floating-point accumulation can overflow and prevent JSON output."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0017122
+    }
+  },
+  "validation": {
+    "article_words": 1668,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
