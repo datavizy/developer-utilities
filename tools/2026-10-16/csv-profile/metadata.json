@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-16",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Recommenders Need More Than a Good Guess",
+  "article": "articles/2026-10-16-recommenders-need-more-than-a-good-guess.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile for Recommender Data Intake",
+  "utility_use_case": "Before training a movie-rating or behavioral model, a researcher can run `csv-profile.sh` on an exported event table to check blank cells, inconsistent row widths, and basic numeric ranges. The resulting JSON gives a reproducible first-pass snapshot that can be saved alongside preprocessing notes. The researcher must still decide whether blanks mean unobserved feedback, whether numeric fields use the expected scale, and whether click events are valid preference signals.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "recommender-systems",
+    "data-visualization",
+    "statistics",
+    "data-quality",
+    "reproducible-research"
+  ],
+  "source": {
+    "book_label": "Practical Data Science with Python 3",
+    "section_title": "1 You can find many attractive and free pictures on Pixabay (visit",
+    "book_sha256": "1fe80b89e9176d00cc6605780b295a83141863cff2d7c38eef46853d1986c214",
+    "excerpt_sha256": "2236b7aa63c7733ed87798c8d2bdebff8b17aebea8377d1d16874a885c283cd3",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0025d32eb89661ad016ad24a5d634c87d08df0900121871abe",
+    "usage": {
+      "input_tokens": 5313,
+      "input_tokens_details": {
+        "cache_write_tokens": 5310,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4078,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 9391
+    },
+    "generated_at": "2026-10-16T16:02:20.208911+00:00",
+    "estimated_standard_usd": 0.0025703,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0551b10bf17c0ee7016ad24a8cb3bc87d08bd56d01878dd89d",
+      "usage": {
+        "input_tokens": 9113,
+        "input_tokens_details": {
+          "cache_write_tokens": 9110,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1822,
+        "output_tokens_details": {
+          "reasoning_tokens": 1444
+        },
+        "total_tokens": 10935
+      },
+      "reviewed_at": "2026-10-16T16:02:46.889843+00:00",
+      "summary": "Corrected the worked example’s book count and aligned README claims with the utility’s output, CLI, error handling, and CSV record numbering.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "Suppose a small reading app has three books, labeled A, B, and C.",
+          "new": "Suppose a small reading app has four books, labeled A, B, C, and D."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Finite numeric values contribute to count, sum, mean, minimum, and maximum.",
+          "new": "Finite numeric values contribute to `numeric_count`, `numeric_mean`, `numeric_min`, and `numeric_max`; the sum is an internal accumulator and is not included in the JSON."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The only supported argument is the required `--file` path.",
+          "new": "The only data-file option is the required `--file` path. The argument parser also provides its standard `--help` option."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The tool exits with status 1 if ragged rows are found, even though it prints the profile. Input or validation errors are reported by the argument parser.",
+          "new": "The tool exits with status 1 if ragged rows are found, even though it prints the profile. Argument parsing and caught input or validation errors are reported by the argument parser. Some `csv.Error` exceptions, such as fields exceeding Python's CSV field-size limit, are not caught."
+        },
+        {
+          "field": "utility_readme",
+          "old": "with additional space for the list of ragged row numbers.",
+          "new": "with additional space for the list of ragged row numbers. These numbers refer to logical CSV records, not physical text lines; the header is record 1."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018223000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1937,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
