@@ -9,3 +9,4 @@
 | 2026-10-13 | [csv-statistics: Reproducible summaries from a numeric CSV column](tools/2026-10-13/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-10-13 -->
 | 2026-10-14 | [CSV Profile: A Quick Data-Quality Pass](tools/2026-10-14/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-14 -->
 | 2026-10-15 | [CSV Profile: A First-Pass Data Quality Check](tools/2026-10-15/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-15 -->
+| 2026-10-16 | [CSV Profile for Recommender Data Intake](tools/2026-10-16/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-16 -->
