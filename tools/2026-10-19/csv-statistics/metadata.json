@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Homogeneous Systems: The Shape of Every Linear Solution",
+  "article": "articles/2026-10-19-homogeneous-systems-solution-sets.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "CSV Statistics and Reproducible Bootstrap Mean Intervals",
+  "utility_use_case": "A researcher receives a CSV export of repeated sensor measurements and wants a reproducible first-pass summary of one column before making a figure or sharing a data-quality report. The command produces descriptive statistics, counts excluded blank and invalid entries, and a seeded percentile bootstrap interval for the mean. The JSON output can be archived alongside the input and command so a collaborator can repeat the calculation. The results remain descriptive: they do not demonstrate a causal effect, significance, or that the sample represents a broader population.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "linear-algebra",
+    "statistics",
+    "data-visualization",
+    "reproducible-research",
+    "bootstrap",
+    "scientific-computing"
+  ],
+  "source": {
+    "book_label": "Interactive Linear Algebra -- Conrad Plaut; -- 2026 -- CRC Press",
+    "section_title": "2.5 Homogeneous Systems",
+    "book_sha256": "14e1f715e959dd05d6a4c3b11edbcdf8e0a066ed64d4407925c10e743f8471a7",
+    "excerpt_sha256": "0ee41d29c24812218afe9e56b13f9a144a15fb49ba0b8ee1380c80bcaeea060d",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_089403108e4906ef016ad63ed9f9ac87d095af824e6a001ed0",
+    "usage": {
+      "input_tokens": 4583,
+      "input_tokens_details": {
+        "cache_write_tokens": 4580,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4064,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 8647
+    },
+    "generated_at": "2026-10-19T16:02:18.766641+00:00",
+    "estimated_standard_usd": 0.0024903,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_02244fb488ee3dc3016ad63f0b183487d0bb6efc45df1adfe7",
+      "usage": {
+        "input_tokens": 8370,
+        "input_tokens_details": {
+          "cache_write_tokens": 8367,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1459,
+        "output_tokens_details": {
+          "reasoning_tokens": 1341
+        },
+        "total_tokens": 9829
+      },
+      "reviewed_at": "2026-10-19T16:02:37.934188+00:00",
+      "summary": "Corrected the false diagnosis: the null-space directions are valid, and the arithmetic error was in adding the vectors.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The calculation reveals that the claimed direction vectors were not correctly derived for the displayed matrix. Let us correct the setup before relying on the conclusion.",
+          "new": "The direction vectors are valid; the mistake is in adding their coordinates. Let us redo that sum before relying on the conclusion."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015665
+    }
+  },
+  "validation": {
+    "article_words": 1575,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
