@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Financial History to Forecasts: Making Uncertainty Visible",
+  "article": "articles/2026-10-20-financial-history-forecasts-uncertainty.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "CSV Statistics and Reproducible Bootstrap Mean Interval",
+  "utility_use_case": "A research analyst receives a CSV export of repeated measurements and wants a quick, auditable check of the numeric values before building a visualization or inferential model. They run the utility with a recorded seed, inspect the missing and invalid counts, then use the JSON summary as a reproducible checkpoint in their analysis notes. The bootstrap interval offers a descriptive view of resampling variability in the sample mean, not a claim about future observations or a significance result.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "forecasting",
+    "statistics",
+    "bootstrap",
+    "data-visualization",
+    "reproducibility",
+    "financial-analysis"
+  ],
+  "source": {
+    "book_label": "Financial Data Analysis For FP&A- With Excel and Python",
+    "section_title": "Chapter 5: Financial Forecasting and Budgeting",
+    "book_sha256": "8c8ed2ca05a099e48cffffa9e086eb433c5800b2d40df5191505150d202e599a",
+    "excerpt_sha256": "49a88f4a6aeb3a08d2e59515b8f0c3a29fbbb7cefb8b8c5a8342a5c96963ec73",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0cbfdbdf207393f8016ad79047ae6487d086671914aeb64c0c",
+    "usage": {
+      "input_tokens": 4975,
+      "input_tokens_details": {
+        "cache_write_tokens": 4972,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3945,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 8920
+    },
+    "generated_at": "2026-10-20T16:01:46.233405+00:00",
+    "estimated_standard_usd": 0.00247,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0f4695e46286c609016ad7906a7fc487d0be55343a21a55f8b",
+      "usage": {
+        "input_tokens": 8683,
+        "input_tokens_details": {
+          "cache_write_tokens": 8680,
+          "cached_tokens": 0
+        },
+        "output_tokens": 584,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 9267
+      },
+      "reviewed_at": "2026-10-20T16:01:58.012092+00:00",
+      "summary": "The worked statistics and bootstrap arithmetic are correct. The utility README matches the executable source’s inputs, defaults, validation, calculations, output, and stated limitations. No essential technical corrections are needed.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0011603000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1796,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
