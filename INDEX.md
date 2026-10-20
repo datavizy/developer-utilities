@@ -11,3 +11,4 @@
 | 2026-10-15 | [CSV Profile: A First-Pass Data Quality Check](tools/2026-10-15/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-15 -->
 | 2026-10-16 | [CSV Profile for Recommender Data Intake](tools/2026-10-16/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-16 -->
 | 2026-10-19 | [CSV Statistics and Reproducible Bootstrap Mean Intervals](tools/2026-10-19/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-10-19 -->
+| 2026-10-20 | [CSV Statistics and Reproducible Bootstrap Mean Interval](tools/2026-10-20/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-10-20 -->
