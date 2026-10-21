@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From CSV Rows to Trustworthy Results: Command-Line Statistics That Travel",
+  "article": "articles/2026-10-21-csv-command-line-statistics.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "csv-profile: Quick Structural and Numeric Checks for CSV Data",
+  "utility_use_case": "A researcher receives a new instrument export before plotting trends. They run `bash csv-profile.sh --file measurements.csv` to see whether the rows match the header, where blank cells occur, and which columns contain finite numeric values. A nonzero exit due to ragged rows can stop a downstream pipeline, while the JSON report offers a quick, reproducible checkpoint before the researcher investigates repairs and applies domain-specific rules.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "command-line",
+    "csv",
+    "reproducibility",
+    "data-quality"
+  ],
+  "source": {
+    "book_label": "Hands-On Data Science with the Command Line - Automate -- Jason Morris; Chris McCubbin; Raymond Page",
+    "section_title": "Selected body passage",
+    "book_sha256": "a79329b9135b30526f1dff0cdc168767a781c128fed8162673da69962d8c7f9e",
+    "excerpt_sha256": "0edc259036156be70d21c76cf393f362056c210826b4bab56784245d663ae66f",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_03b56d33f120e54f016ad8e5318a7c87d082fa66915da0fe7f",
+    "usage": {
+      "input_tokens": 5959,
+      "input_tokens_details": {
+        "cache_write_tokens": 5956,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4139,
+      "output_tokens_details": {
+        "reasoning_tokens": 302
+      },
+      "total_tokens": 10098
+    },
+    "generated_at": "2026-10-21T16:16:20.632662+00:00",
+    "estimated_standard_usd": 0.0026654,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0aea85c20234e9f4016ad8e554c66487d0befc2d070ff171fc",
+      "usage": {
+        "input_tokens": 9627,
+        "input_tokens_details": {
+          "cache_write_tokens": 9624,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2301,
+        "output_tokens_details": {
+          "reasoning_tokens": 2070
+        },
+        "total_tokens": 11928
+      },
+      "reviewed_at": "2026-10-21T16:16:41.621691+00:00",
+      "summary": "Corrected CSV record numbering and clarified error handling and floating-point overflow limits in the utility documentation.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "A row with a different field count is reported by its one-based file line number, counting the header as line 1.",
+          "new": "A row with a different field count is reported by its one-based CSV record number, counting the header as record 1; quoted newlines do not increase this number."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Input and validation errors are reported by the command-line parser and also produce a nonzero exit.",
+          "new": "File-access, decoding, and validation errors caught by the program are reported by the command-line parser and produce a nonzero exit."
+        },
+        {
+          "field": "utility_readme",
+          "old": "This is a screening profile, not a schema validator or repair tool.",
+          "new": "This is a screening profile, not a schema validator or repair tool; sufficiently large finite values can overflow the floating-point total and prevent a JSON report."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0021132
+    }
+  },
+  "validation": {
+    "article_words": 1560,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
