@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Eigenvectors: The Directions a Matrix Leaves Recognizable",
+  "article": "articles/2026-10-23-eigenvectors-directions-matrices.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A First-Pass Check for Missingness and Numeric Shape",
+  "utility_use_case": "A researcher receives a sensor CSV export and wants a reproducible pre-analysis check before visualizing measurements. Running `bash csv-profile.sh --file measurements.csv` reports blank cells, finite numeric counts and ranges, and row numbers whose field counts disagree with the header. The researcher can identify formatting issues and decide what domain-specific validation or missing-data treatment is needed. The summary does not test hypotheses or establish causes.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "linear-algebra",
+    "eigenvectors",
+    "pca",
+    "statistics",
+    "data-visualization",
+    "data-quality",
+    "python"
+  ],
+  "source": {
+    "book_label": "PRACTICAL LINEAR ALGEBRA FOR DATA SCIENCE",
+    "section_title": "2 matrix. The two vectors in the left plot (",
+    "book_sha256": "31aa6a0ff33a68efedd004049590a64dcb9a14425251b9c3bc2ef71ce13ecc70",
+    "excerpt_sha256": "a66593b959db6e7ec691d117ed488bae0515cdc972c71921d6fadd67600aae9c",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0a14749c2b542db7016adb84f4cd6887d0a6e60f8dbbee6b41",
+    "usage": {
+      "input_tokens": 3020,
+      "input_tokens_details": {
+        "cache_write_tokens": 3017,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4026,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 7046
+    },
+    "generated_at": "2026-10-23T16:02:32.958976+00:00",
+    "estimated_standard_usd": 0.002315,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_034c757af76e3cf5016adb851990fc87d0957b7dd20f5a86b4",
+      "usage": {
+        "input_tokens": 6720,
+        "input_tokens_details": {
+          "cache_write_tokens": 6717,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2606,
+        "output_tokens_details": {
+          "reasoning_tokens": 2153
+        },
+        "total_tokens": 9326
+      },
+      "reviewed_at": "2026-10-23T16:02:57.771279+00:00",
+      "summary": "Corrected CSV record numbering for multiline records, qualified the complexity claim, clarified uncaught CSV parser errors, and documented possible overflow in numeric summaries.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Such row numbers are reported in `ragged_rows`, using file line numbers that start at 2 for the first data record.",
+          "new": "Such row numbers are reported in `ragged_rows`, using CSV record numbers, with the header as record 1; quoted fields may span multiple physical lines."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The script reads rows in order, maintains counters and numeric summaries for each column, then serializes the result as indented, sorted-key JSON. Its time complexity is $O(NC)$ for $N$ data rows and $C$ columns, since each correctly shaped row's cells are inspected. Memory use is $O(C+R)$, where $R$ is the number of ragged rows retained for reporting; the file is not loaded all at once.",
+          "new": "The script reads rows in order, maintains counters and numeric summaries for each column, then serializes the result as indented, sorted-key JSON. For correctly shaped data, its per-cell profiling work is $O(NC)$ for $N$ data rows and $C$ columns; CSV parsing also depends on input size. Memory use is $O(C+R)$, where $R$ is the number of ragged rows retained for reporting; the file is not loaded all at once."
+        },
+        {
+          "field": "utility_readme",
+          "old": "File and input-validation errors are reported through argparse and also result in a nonzero exit status.",
+          "new": "Caught file and input-validation errors are reported through argparse and result in a nonzero exit status; CSV parser errors may instead produce a traceback."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Numeric statistics are descriptive summaries of finite values, not significance tests or evidence of causation.",
+          "new": "Numeric statistics are descriptive summaries of finite values, not significance tests or evidence of causation. Very large finite values can overflow the running sum and make JSON serialization fail."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.001975
+    }
+  },
+  "validation": {
+    "article_words": 1474,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
