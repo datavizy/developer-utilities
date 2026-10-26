@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "A Hedge Is a Model Under Stress: Estimating American-Option Delta Along One Path",
+  "article": "articles/2026-10-26-american-option-delta-hedging-lsm-single-path.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A Fast Data-Quality Check Before Analysis",
+  "utility_use_case": "Before generating plots or fitting a model from experimental measurements, run the profiler on the exported CSV to spot blank cells, inconsistent row widths, and columns containing usable finite numbers. Save the JSON output alongside the analysis as a lightweight data-quality artifact. A ragged-row exit status can also make a shell workflow stop before downstream code silently consumes a malformed table.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "quantitative-finance",
+    "monte-carlo",
+    "american-options",
+    "data-quality",
+    "csv",
+    "reproducible-research"
+  ],
+  "source": {
+    "book_label": "Derivatives Analytics with Python- Data Analysis, Models",
+    "section_title": "13.5.4 LSM Delta Hedging in BCC97 (Single Path)",
+    "book_sha256": "db3be98246f15955f729611eb424a001934ed9e95f8a34e75bd2c4bdcb4153e3",
+    "excerpt_sha256": "fbaf8638c6a2871daafa2dd30b3088bc6c146f1ceb3acea1b4abaf4697c6006e",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_04b7ecfbc2b4aaeb016adf7953937087d0beb01839c3235a82",
+    "usage": {
+      "input_tokens": 2797,
+      "input_tokens_details": {
+        "cache_write_tokens": 2794,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4024,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 6821
+    },
+    "generated_at": "2026-10-26T16:02:17.317754+00:00",
+    "estimated_standard_usd": 0.0022917,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_07b077750616f6de016adf798989bc87d080f9eab79f0bf71b",
+      "usage": {
+        "input_tokens": 6557,
+        "input_tokens_details": {
+          "cache_write_tokens": 6554,
+          "cached_tokens": 0
+        },
+        "output_tokens": 4418,
+        "output_tokens_details": {
+          "reasoning_tokens": 3674
+        },
+        "total_tokens": 10975
+      },
+      "reviewed_at": "2026-10-26T16:02:53.681372+00:00",
+      "summary": "Corrected CSV record-number documentation, clarified uncaught CSV reader errors, and noted hedging-path and timestep limitations visible in the supplied code.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The section’s supplied valuation routine, `BCC97_lsm_put_value`, returns the simulated state arrays, exercise indicators, regression coefficients, and other inputs used by the hedge routine.",
+          "new": "The first call to `BCC97_lsm_put_value` assigns its returned state arrays, exercise indicators, and regression coefficients to the hedge routine; it is the upper-bump valuation call. The excerpt does not show a separate hedge-path set initialized at $S_0$ or a holdout split."
+        },
+        {
+          "field": "article_markdown",
+          "old": "The accuracy of the resulting delta therefore depends on both the regression and the bump. A noisy regression can make nearby estimates jump around; an excessively large bump can blur local curvature, while an excessively small one can magnify numerical noise.",
+          "new": "The accuracy of the resulting delta therefore depends on the regression, simulation noise, and the bump. At initialization, the upper- and lower-bump values come from separate calls to `BCC97_lsm_put_value`; the excerpt does not show common random numbers, so their difference may include Monte Carlo noise. A noisy regression can make nearby estimates jump around; an excessively large bump can blur local curvature, while an excessively small one can magnify numerical noise."
+        },
+        {
+          "field": "article_markdown",
+          "old": "The routine simulates $M$ time steps over horizon $T$, with $dt=T/M$.",
+          "new": "The valuation call uses $M$ time steps over horizon $T$. The hedging routine uses the module-level `dt`, initialized as $T/M$ before the function; passing a different $M$ does not update that value and can make the hedge step size inconsistent."
+        },
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` contains one-based CSV line numbers, including the header as line 1, so the first data row is line 2.",
+          "new": "`ragged_rows` contains one-based logical CSV record numbers, including the header as record 1, so the first data record is record 2. A quoted field spanning multiple physical lines counts as one record."
+        },
+        {
+          "field": "utility_readme",
+          "old": "where $G$ is the number of ragged-row line numbers retained.",
+          "new": "where $G$ is the number of ragged-row record numbers retained."
+        },
+        {
+          "field": "utility_readme",
+          "old": "File, header, and parsing-related errors handled by the script are reported through argparse as errors.",
+          "new": "File and header errors handled by the script are reported through argparse as errors. The script does not catch `csv.Error` from the reader, so such errors may produce a traceback."
+        }
+      ],
+      "glossary_edits": [
+        {
+          "term": "Ragged row",
+          "definition": "A CSV record whose number of parsed fields differs from the number of header columns. A profiler can report its logical record number and exclude it from column-wise summaries to avoid misaligned counts. A quoted field spanning multiple physical lines still belongs to one record."
+        }
+      ],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0028647
+    }
+  },
+  "validation": {
+    "article_words": 1735,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
