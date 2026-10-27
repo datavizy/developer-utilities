@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Recursion: Turning Repeated Work into a Smaller Problem",
+  "article": "articles/2026-10-27-recursion-smaller-problems.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "CSV Visualizer",
+  "utility_use_case": "A research team receives a CSV of paired instrument readings and wants a quick visual audit before selecting a statistical model. Run the scatter command to inspect association, spread, and possible data-entry anomalies, then use the JSON counts to report how many rows were omitted for missing or nonfinite selected values. The plot is exploratory and descriptive; it does not establish significance or causation.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "recursion",
+    "algorithms",
+    "data-science",
+    "statistics",
+    "visualization",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "Discrete Mathematics for Data Science -- Jack Pope; -- 2026 -- CRC Press",
+    "section_title": "11.1 Recursion",
+    "book_sha256": "a796ba63edf04e0ace1b04ec258c458629e2a847ad48f1cd72e903b1ecaf28c9",
+    "excerpt_sha256": "f315d28ff7a34fce052feb7e0af5eab8b8d293362684438576a6d5ebba3ca972",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0b87228bc125c1c6016ae0caca99e087d0b8dd53a4acc19275",
+    "usage": {
+      "input_tokens": 2644,
+      "input_tokens_details": {
+        "cache_write_tokens": 2641,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3897,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 6541
+    },
+    "generated_at": "2026-10-27T16:02:07.600638+00:00",
+    "estimated_standard_usd": 0.0022129000000000003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_000fe71f22691af8016ae0caffebec87d0950c3e54fc33ca9c",
+      "usage": {
+        "input_tokens": 6215,
+        "input_tokens_details": {
+          "cache_write_tokens": 6212,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2556,
+        "output_tokens_details": {
+          "reasoning_tokens": 2492
+        },
+        "total_tokens": 8771
+      },
+      "reviewed_at": "2026-10-27T16:02:39.768185+00:00",
+      "summary": "No essential corrections found in the article, glossary, or utility README. The tree sums and checks are correct, and the README matches the utility’s implemented options and behavior.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018995
+    }
+  },
+  "validation": {
+    "article_words": 1603,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

@@ -15,3 +15,4 @@
 | 2026-10-21 | [csv-profile: Quick Structural and Numeric Checks for CSV Data](tools/2026-10-21/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-21 -->
 | 2026-10-23 | [CSV Profile: A First-Pass Check for Missingness and Numeric Shape](tools/2026-10-23/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-23 -->
 | 2026-10-26 | [CSV Profile: A Fast Data-Quality Check Before Analysis](tools/2026-10-26/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-26 -->
+| 2026-10-27 | [CSV Visualizer](tools/2026-10-27/csv-visualize/README.md) | data visualization and scientific communication | <!-- publication:2026-10-27 -->
