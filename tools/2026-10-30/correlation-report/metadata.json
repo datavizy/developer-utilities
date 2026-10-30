@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Scores to Decisions: Reading Classification Metrics Without Losing the Plot",
+  "article": "articles/2026-10-30-scores-to-classification-decisions-metrics.md",
+  "utility_kind": "correlation-report",
+  "utility_title": "correlation-report",
+  "utility_use_case": "A research team exports paired sensor measurements to CSV and wants a reproducible first-pass summary before plotting or fitting a richer model. They select the predictor and response columns explicitly, run the command, and save the JSON alongside the dataset and analysis notes. The pair count and omitted-row count expose basic data-quality changes between exports, while r and the fitted line provide a compact description of linear association. A researcher then checks a scatterplot and investigates missingness, outliers, dependence, and nonlinear patterns instead of treating the summary as an inference or causal result.",
+  "domain": "statistical analysis and exploratory research",
+  "tags": [
+    "statistics",
+    "classification",
+    "data-visualization",
+    "model-evaluation",
+    "reproducible-research"
+  ],
+  "source": {
+    "book_label": "Applied Data Science Using PySpark - Learn the End-to-End -- Ramcharan Kakarla & Sundar Krishnan & Sridhar Alla",
+    "section_title": "6.4.2.3 y-hat prediction to probability to final prediction",
+    "book_sha256": "ce66c6f40373d68683a4584e5be7ede6612c46a0459c7e9924317e6f1a0845a3",
+    "excerpt_sha256": "70b142ed7cc035b7c35a4eb3ca6ff32424ab014c878c64ea96de58605020b420",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_036006d3e608ecb4016ae4bf58e79c87d087d3978d7dde20cb",
+    "usage": {
+      "input_tokens": 6038,
+      "input_tokens_details": {
+        "cache_write_tokens": 6035,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4053,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 10091
+    },
+    "generated_at": "2026-10-30T16:02:06.679581+00:00",
+    "estimated_standard_usd": 0.0026303000000000003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0de0822cee12ce24016ae4bf7f4d7087d0a24081c8dedf1955",
+      "usage": {
+        "input_tokens": 9926,
+        "input_tokens_details": {
+          "cache_write_tokens": 9923,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1305,
+        "output_tokens_details": {
+          "reasoning_tokens": 1251
+        },
+        "total_tokens": 11231
+      },
+      "reviewed_at": "2026-10-30T16:02:25.185708+00:00",
+      "summary": "The article’s worked calculations and statistical explanations are technically sound. The README accurately describes the utility’s documented CLI and calculations.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0016450999999999998
+    }
+  },
+  "validation": {
+    "article_words": 1688,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
