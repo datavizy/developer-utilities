@@ -1,0 +1,10 @@
+{
+  "interpretation": "Descriptive association and a fitted line; no causal or significance claim.",
+  "least_squares_intercept": 0.0,
+  "least_squares_slope": 2.0,
+  "n_pairs": 4,
+  "omitted_rows": 0,
+  "pearson_r": 1.0,
+  "x_column": "x",
+  "y_column": "y"
+}
