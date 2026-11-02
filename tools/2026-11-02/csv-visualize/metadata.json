@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From CSV to Clear Evidence: Choosing and Automating Data Visualizations",
+  "article": "articles/2026-11-02-csv-visualization-clear-evidence.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "csv-visualize",
+  "utility_use_case": "A research team receives periodic CSV exports of paired sensor readings and needs a repeatable first-look figure before deciding which observations deserve deeper analysis. The scientist runs `csv-visualize` in a project-local Python environment to create an SVG scatter plot, then checks the JSON counts and investigates omitted rows. The visualization chapter's emphasis on selecting a chart for the question and matching tools to reporting needs motivates this workflow. The utility itself is an independent implementation; it does not perform the broader reporting or statistical analyses described in the chapter.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "python",
+    "reproducibility",
+    "scientific-computing"
+  ],
+  "source": {
+    "book_label": "Data Visualization in Finance with Python_ A Comprehensive -- Schwartz, Alice & Van Der Post, Hayden -- 2024 -- Reactive Publishing",
+    "section_title": "CHAPTER 5: VISUALIZATION TOOLS",
+    "book_sha256": "0aeb8dc74e849fc51dcf28515aaf0d197d1abd6f76eb994b72fb66ba61fd0057",
+    "excerpt_sha256": "026080dec0b169ccbd01e8933c62fc17a3eb8d662522469268494573f0e60637",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0610cf1291531568016ae8c1db07a887d0b549d68fb83a8096",
+    "usage": {
+      "input_tokens": 5130,
+      "input_tokens_details": {
+        "cache_write_tokens": 5127,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4134,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 9264
+    },
+    "generated_at": "2026-11-02T17:01:56.434394+00:00",
+    "estimated_standard_usd": 0.00258,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_07ac33765c0408c8016ae8c20536d887d088b9a571e08b6dff",
+      "usage": {
+        "input_tokens": 9022,
+        "input_tokens_details": {
+          "cache_write_tokens": 9019,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2360,
+        "output_tokens_details": {
+          "reasoning_tokens": 2070
+        },
+        "total_tokens": 11382
+      },
+      "reviewed_at": "2026-11-02T17:02:21.485374+00:00",
+      "summary": "Corrected the opening to distinguish input checks from what a scatter plot can reveal, clarified workbook-reading capabilities, fixed the statsmodels name, and specified the Python version required by Matplotlib 3.10.8.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The file looks tidy, but a quick scatter plot reveals three blank rows, one value entered as `n/a`, and a single unusually large advertising spend.",
+          "new": "The file looks tidy, but an input check and scatter plot turn up three blank rows, one value entered as `n/a`, and a single unusually large advertising spend."
+        },
+        {
+          "field": "article_markdown",
+          "old": "Python libraries such as `openpyxl` and `xlsxwriter` can read, write, and format workbooks.",
+          "new": "Python libraries such as `openpyxl` and `xlsxwriter` can create and format workbooks, while `openpyxl` can also read existing workbooks."
+        },
+        {
+          "field": "article_markdown",
+          "old": "Statistical libraries such as SciPy and StatsModels support more advanced analysis",
+          "new": "Statistical libraries such as SciPy and statsmodels support more advanced analysis"
+        },
+        {
+          "field": "utility_readme",
+          "old": "The Bash launcher runs Python 3.",
+          "new": "The Bash launcher runs Python 3.10 or later."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0020821999999999998
+    }
+  },
+  "validation": {
+    "article_words": 1861,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
