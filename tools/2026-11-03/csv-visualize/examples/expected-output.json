@@ -1,0 +1,6 @@
+{
+  "kind": "scatter",
+  "observations": 4,
+  "omitted_rows": 0,
+  "output": "examples/scatter.svg"
+}
