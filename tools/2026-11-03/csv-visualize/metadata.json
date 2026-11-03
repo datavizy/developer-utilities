@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Why Calibrate a Pricing Model? From Many Possible Prices to Market Fit",
+  "article": "articles/2026-11-03-why-calibrate-a-pricing-model.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "CSV Visualizer",
+  "utility_use_case": "A scientist comparing two measurement columns can export a labeled scatter plot for a report, or plot one variable’s distribution to spot unusual values and data-entry problems. In a pricing-model workflow, this kind of exploratory check helps review market observations before calibration. The figure is descriptive only: it does not estimate significance, establish causality, or validate a model.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "calibration",
+    "derivatives",
+    "statistics",
+    "visualization",
+    "scientific-computing"
+  ],
+  "source": {
+    "book_label": "Derivatives Analytics with Python- Data Analysis, Models",
+    "section_title": "11.2.1 Why Calibration at All?",
+    "book_sha256": "db3be98246f15955f729611eb424a001934ed9e95f8a34e75bd2c4bdcb4153e3",
+    "excerpt_sha256": "3e65026a92946026663c857b383bdbd29c06856819256c56b072f1ad7c3982fe",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_043669ddd4cc3c62016aea134cda2487d08508a26e37a1ef16",
+    "usage": {
+      "input_tokens": 2477,
+      "input_tokens_details": {
+        "cache_write_tokens": 2474,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3484,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 5961
+    },
+    "generated_at": "2026-11-03T17:01:30.826877+00:00",
+    "estimated_standard_usd": 0.0019897,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0628b4828715657d016aea136c39f087d0b58a90024f8576fe",
+      "usage": {
+        "input_tokens": 5703,
+        "input_tokens_details": {
+          "cache_write_tokens": 5700,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1857,
+        "output_tokens_details": {
+          "reasoning_tokens": 1798
+        },
+        "total_tokens": 7560
+      },
+      "reviewed_at": "2026-11-03T17:01:51.131241+00:00",
+      "summary": "No essential technical corrections found. The worked example’s probabilities, prices, and stated range check out, and the utility documentation matches the supplied implementation.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0014988000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1365,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
