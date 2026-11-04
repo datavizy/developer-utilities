@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Thinking in Supersteps: PageRank, Pregel, and Reliable Graph Computation",
+  "article": "articles/2026-11-04-thinking-in-supersteps-pagerank-pregel.md",
+  "utility_kind": "correlation-report",
+  "utility_title": "Correlation Report",
+  "utility_use_case": "A researcher has a CSV of paired sensor readings and wants a quick, repeatable first look at whether two measurements move together. They can select the predictor and response explicitly, retain the JSON output in an analysis workflow, and note how many rows were omitted. Like an iterative graph analysis, this is a computation whose interpretation depends on clear input and method choices. The correlation report remains descriptive: it does not test significance or establish causation.",
+  "domain": "statistical analysis and exploratory research",
+  "tags": [
+    "graph-data-science",
+    "pagerank",
+    "pregel",
+    "statistics",
+    "data-visualization",
+    "reproducible-computing"
+  ],
+  "source": {
+    "book_label": "Graph Data Science with Neo4j _ Learn How to Use Neo4j 5 -- Scifo, Estelle -- 1st edition, Birmingham, UK, 2023",
+    "section_title": "10 Writing Your Custom Graph Algorithms with the Pregel API in Java",
+    "book_sha256": "703510ad6b29843be454d8bb42ab81b11a3e64bc0799eeda4d5bdb7dd280d08f",
+    "excerpt_sha256": "fed39a28c05ca35cd9572886245fb0320fcd49888dc4816f03628fc913a3c550",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_03c9ea25078d17ce016aeb64d9655087d08ae311ce389c1db3",
+    "usage": {
+      "input_tokens": 5781,
+      "input_tokens_details": {
+        "cache_write_tokens": 5778,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4159,
+      "output_tokens_details": {
+        "reasoning_tokens": 320
+      },
+      "total_tokens": 9940
+    },
+    "generated_at": "2026-11-04T17:01:58.905496+00:00",
+    "estimated_standard_usd": 0.0026576,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_020617064b8d8071016aeb65076dc487d0a9c7c0c7ecd93e05",
+      "usage": {
+        "input_tokens": 9437,
+        "input_tokens_details": {
+          "cache_write_tokens": 9434,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1896,
+        "output_tokens_details": {
+          "reasoning_tokens": 1809
+        },
+        "total_tokens": 11333
+      },
+      "reviewed_at": "2026-11-04T17:02:19.517044+00:00",
+      "summary": "Corrected the minimum Python version: the implementation uses statistics.fmean, which requires Python 3.8 or newer. The worked PageRank arithmetic checks out.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Python 3 available",
+          "new": "Python 3.8 or newer available"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018917
+    }
+  },
+  "validation": {
+    "article_words": 1641,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
