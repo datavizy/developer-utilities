@@ -19,3 +19,4 @@
 | 2026-10-30 | [correlation-report](tools/2026-10-30/correlation-report/README.md) | statistical analysis and exploratory research | <!-- publication:2026-10-30 -->
 | 2026-11-02 | [csv-visualize](tools/2026-11-02/csv-visualize/README.md) | data visualization and scientific communication | <!-- publication:2026-11-02 -->
 | 2026-11-03 | [CSV Visualizer](tools/2026-11-03/csv-visualize/README.md) | data visualization and scientific communication | <!-- publication:2026-11-03 -->
+| 2026-11-04 | [Correlation Report](tools/2026-11-04/correlation-report/README.md) | statistical analysis and exploratory research | <!-- publication:2026-11-04 -->
