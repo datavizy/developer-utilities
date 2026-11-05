@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "A Collatz Map, a Matrix, and the Shape of a Graph",
+  "article": "articles/2026-11-05-collatz-matrices-functional-graphs.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "csv-statistics: Reproducible summaries and bootstrap intervals",
+  "utility_use_case": "A lab analyst can run the same column summary on a measurements CSV as part of a repeatable exploratory workflow, then commit the command, seed, input description, and JSON output with the analysis. Missing and invalid counts make data exclusions visible, while the percentile bootstrap interval communicates resampling variability descriptively. It is not a significance test or a causal analysis.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "linear-algebra",
+    "graph-theory",
+    "statistics",
+    "bootstrap",
+    "reproducible-research"
+  ],
+  "source": {
+    "book_label": "Exploring Linear Algebra_ Labs and Projects with -- Arangala, Crista -- 2024 -- CRC Press",
+    "section_title": "34 Project 3: The Collatz Problem",
+    "book_sha256": "006fa8d96859b5866fe3a6f02e4d29042b6606258937b8a25943215559d3833b",
+    "excerpt_sha256": "1ccb46dbd485edb2e624a910d1494a465f18d2e70826b256f3d9ca1fcf0ec7ed",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_062a5b23268d9ab1016aecb64ea8c087d0857a9cd89e402dc4",
+    "usage": {
+      "input_tokens": 6962,
+      "input_tokens_details": {
+        "cache_write_tokens": 6959,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4386,
+      "output_tokens_details": {
+        "reasoning_tokens": 658
+      },
+      "total_tokens": 11348
+    },
+    "generated_at": "2026-11-05T17:01:50.821384+00:00",
+    "estimated_standard_usd": 0.0028891999999999998,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e20c016dd89c9bb016aecb67f5a8087d08a998f8d1b13dd63",
+      "usage": {
+        "input_tokens": 10629,
+        "input_tokens_details": {
+          "cache_write_tokens": 10626,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1703,
+        "output_tokens_details": {
+          "reasoning_tokens": 1638
+        },
+        "total_tokens": 12332
+      },
+      "reviewed_at": "2026-11-05T17:02:12.341630+00:00",
+      "summary": "No technical corrections are needed. The worked matrix, characteristic polynomial, rank, nullity, cycle claims, and documented utility behavior are consistent with the supplied data and executable source.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0019144000000000001
+    }
+  },
+  "validation": {
+    "article_words": 1533,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
