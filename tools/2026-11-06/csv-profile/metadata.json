@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Correlation, Regression, and the Shape of a Relationship",
+  "article": "articles/2026-11-06-correlation-regression-shape-of-relationship.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A First-Pass Data Quality Check",
+  "utility_use_case": "Before correlating two biological measurements, run the profile to catch blank cells, malformed row lengths, and unexpected numeric ranges. Use its JSON as an initial reproducibility check, then inspect plots and apply an analysis appropriate to the paired data and study design.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "statistics",
+    "data-visualization",
+    "correlation",
+    "regression",
+    "csv",
+    "reproducible-research"
+  ],
+  "source": {
+    "book_label": "Biostatistics For Dummies, 2nd Edition",
+    "section_title": "Chapter 15 Introducing Correlation and Regression",
+    "book_sha256": "6bd47a58f776e8912d329a8649a3eda091c8e5bdaec51d258c60008a0862f1d6",
+    "excerpt_sha256": "5b8c02580553ac0173b85649baae2bf47ac4cbddb4957a85cd7a2e8aa200db0e",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_01a9ac2d3679749f016aee07d4ce2087d0b33790926ed80d8f",
+    "usage": {
+      "input_tokens": 2300,
+      "input_tokens_details": {
+        "cache_write_tokens": 2297,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3575,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 5875
+    },
+    "generated_at": "2026-11-06T17:01:45.476270+00:00",
+    "estimated_standard_usd": 0.0020175,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_03afe85dd70f001b016aee07f9d6e487d0b992c1ea6f263f4a",
+      "usage": {
+        "input_tokens": 5616,
+        "input_tokens_details": {
+          "cache_write_tokens": 5613,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2294,
+        "output_tokens_details": {
+          "reasoning_tokens": 2100
+        },
+        "total_tokens": 7910
+      },
+      "reviewed_at": "2026-11-06T17:02:11.211126+00:00",
+      "summary": "Corrected the worked-example t statistic and aligned ragged-row numbering and numeric-summary limitations with the utility's behavior.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "\\approx 3.578.",
+          "new": "\\approx 3.576."
+        },
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` contains one-based physical line numbers for records whose field count differs from the header.",
+          "new": "`ragged_rows` contains CSV record numbers, counting the header as record 1, for records whose field count differs from the header."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Numeric summaries include values that Python can parse as finite floating-point numbers.",
+          "new": "Numeric summaries include values that Python can parse as finite floating-point numbers, although a running sum can overflow for extreme inputs and cause the command to fail."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0017086
+    }
+  },
+  "validation": {
+    "article_words": 1418,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
