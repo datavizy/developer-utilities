@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Reading Networks Without Losing the Plot",
+  "article": "articles/2026-11-09-reading-networks-without-losing-the-plot.md",
+  "utility_kind": "correlation-report",
+  "utility_title": "Correlation Report",
+  "utility_use_case": "A research team has paired measurements of instrument temperature and signal intensity in a CSV file. Before fitting a richer model, a scientist runs `bash correlation-report.sh --file measurements.csv --x temperature --y intensity` to obtain a reproducible descriptive summary and fitted line. They then inspect a scatterplot, check for outliers and nonlinear patterns, and decide whether the association warrants further analysis. The report is not treated as a significance test or evidence that temperature causes changes in intensity.",
+  "domain": "statistical analysis and exploratory research",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "network-analysis",
+    "exploratory-analysis",
+    "reproducible-research",
+    "python"
+  ],
+  "source": {
+    "book_label": "Data Science Essentials in Python- Collect - Organize - -- Dmitry Zinoviev",
+    "section_title": "Chapter 7Working with Network Data",
+    "book_sha256": "bbe48d8b28f03e35e0e9eda9ed2893414dc4bc2eb361440c115485648e9a8e92",
+    "excerpt_sha256": "4a49fb570c39dd59352aeff595f700f95b5a7c1f6c4f50fb53613e8470aa169e",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0614b8c74b42f1a8016af1fc4e4d3c87d0bf5fdcc832d60bc4",
+    "usage": {
+      "input_tokens": 5510,
+      "input_tokens_details": {
+        "cache_write_tokens": 5507,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3922,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 9432
+    },
+    "generated_at": "2026-11-09T17:01:50.790619+00:00",
+    "estimated_standard_usd": 0.002512,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_042a8674b84bd1bb016af1fc7f742487d0bce3a264cc06e03e",
+      "usage": {
+        "input_tokens": 9074,
+        "input_tokens_details": {
+          "cache_write_tokens": 9071,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2210,
+        "output_tokens_details": {
+          "reasoning_tokens": 2046
+        },
+        "total_tokens": 11284
+      },
+      "reviewed_at": "2026-11-09T17:02:22.231427+00:00",
+      "summary": "Corrected the directed-graph closeness convention and distinguished the articulation point D from a bridge edge. The worked numeric examples and utility documentation agree with the supplied data and executable source.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "A common form is the reciprocal of the mean distance from a node to all other nodes.",
+          "new": "In an undirected graph, a common form is the reciprocal of the mean distance to all other nodes. In a directed graph, definitions may use distances from or to the node."
+        },
+        {
+          "field": "article_markdown",
+          "old": "act as a bridge between parts of the network.",
+          "new": "serve as an articulation point between parts of the network."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0020124
+    }
+  },
+  "validation": {
+    "article_words": 1730,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
