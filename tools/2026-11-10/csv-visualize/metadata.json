@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Choose the Measurement Before You Choose the Plot",
+  "article": "articles/2026-11-10-choose-measurement-before-plot.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "CSV Visualizer",
+  "utility_use_case": "A researcher has instrument readings in a CSV and wants a repeatable first look before deciding which statistical analysis is appropriate. They export a histogram for one numeric measurement or a scatter plot for paired numeric measurements, review the JSON counts to see how many rows were plotted or omitted, and preserve the image alongside the source data. This supports exploratory communication, but it does not test significance or establish causation.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "python",
+    "reproducibility",
+    "csv"
+  ],
+  "source": {
+    "book_label": "Hands-On Data Science and Python Machine Learning",
+    "section_title": "0 1 2 3 4 5 6 7 8 9",
+    "book_sha256": "95dfe38e4fdc62bd81fc555f9b3714f5ec801c9b147001d4a0e4fce3c5860003",
+    "excerpt_sha256": "856b2261e5767eaf73bb1ac862b1fb701f175fc839a467327dad55e38abd3b76",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_065773f50cfdea7b016af34de0743087d0a0f01d863340a987",
+    "usage": {
+      "input_tokens": 5669,
+      "input_tokens_details": {
+        "cache_write_tokens": 5666,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3592,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 9261
+    },
+    "generated_at": "2026-11-10T17:02:10.395454+00:00",
+    "estimated_standard_usd": 0.0023629000000000002,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_072e414f195d490e016af34e12cdcc87d0b6a3e31e21eeb24c",
+      "usage": {
+        "input_tokens": 8998,
+        "input_tokens_details": {
+          "cache_write_tokens": 8995,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1989,
+        "output_tokens_details": {
+          "reasoning_tokens": 1830
+        },
+        "total_tokens": 10987
+      },
+      "reviewed_at": "2026-11-10T17:02:37.485560+00:00",
+      "summary": "Corrected the worked example’s squared-deviation sum, sample variance, and standard deviation.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "= \\frac{49.98}{4} = 12.495\\text{ °C}^2.",
+          "new": "= \\frac{45.18}{4} = 11.295\\text{ °C}^2."
+        },
+        {
+          "field": "article_markdown",
+          "old": "$s = \\sqrt{12.495} \\approx 3.535$ °C.",
+          "new": "$s = \\sqrt{11.295} \\approx 3.361$ °C."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018943000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1485,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
