@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Scores to Decisions: Reading Classification Models Carefully",
+  "article": "articles/2026-11-11-scores-to-classification-decisions.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "CSV Numeric Summary and Bootstrap Mean Interval",
+  "utility_use_case": "A researcher receives a CSV of repeated sensor readings and wants a quick, reproducible first-pass summary before making a visualization. Running `bash csv-statistics.sh --file measurements.csv --column value --seed 42` produces JSON with the sample size, missing and invalid counts, central summaries, spread, and a bootstrap mean interval. The researcher can preserve the command and JSON with the analysis, inspect data-quality counts, and decide whether the sampling design supports ordinary row-wise resampling. The interval is descriptive, not a causal or significance claim.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "classification",
+    "statistics",
+    "data-visualization",
+    "model-evaluation",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "Applied Data Science Using PySpark - Learn the End-to-End -- Ramcharan Kakarla & Sundar Krishnan & Sridhar Alla",
+    "section_title": "6.4.2.3 y-hat prediction to probability to final prediction",
+    "book_sha256": "ce66c6f40373d68683a4584e5be7ede6612c46a0459c7e9924317e6f1a0845a3",
+    "excerpt_sha256": "70b142ed7cc035b7c35a4eb3ca6ff32424ab014c878c64ea96de58605020b420",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_05c29bac873f2284016af49f69b06c87d0a55ca4fbbedb4043",
+    "usage": {
+      "input_tokens": 6061,
+      "input_tokens_details": {
+        "cache_write_tokens": 6058,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3780,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 9841
+    },
+    "generated_at": "2026-11-11T17:02:08.291127+00:00",
+    "estimated_standard_usd": 0.0024961,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_00c742552bff5865016af49f91058c87d0859c7fb751ce9249",
+      "usage": {
+        "input_tokens": 9664,
+        "input_tokens_details": {
+          "cache_write_tokens": 9661,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1733,
+        "output_tokens_details": {
+          "reasoning_tokens": 1463
+        },
+        "total_tokens": 11397
+      },
+      "reviewed_at": "2026-11-11T17:02:36.192053+00:00",
+      "summary": "Corrected the confusion-matrix count and clarified the KS statistic as an absolute separation. The F1 definition now avoids implying that F1 is independent of class prevalence.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "two true positives (TP), three true negatives (TN), one false positive (FP), and one false negative (FN).",
+          "new": "two true positives (TP), two true negatives (TN), one false positive (FP), and one false negative (FN)."
+        },
+        {
+          "field": "article_markdown",
+          "old": "is the largest separation between the cumulative score-ranked distributions of positive and negative cases.",
+          "new": "is the maximum absolute separation between the cumulative score-ranked distributions of positive and negative cases."
+        }
+      ],
+      "glossary_edits": [
+        {
+          "term": "Kolmogorov-Smirnov statistic",
+          "definition": "In score-based binary classification analysis, the maximum absolute separation between cumulative distributions of positive and negative cases. It summarizes ranking separation, but does not alone establish future stability or generalization."
+        },
+        {
+          "term": "F1 score",
+          "definition": "The harmonic mean of precision and recall, $2PR/(P+R)$. It combines those two measures into one value but does not explicitly encode class prevalence or the relative costs of error types."
+        }
+      ],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018329000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1546,
+    "glossary_terms": 11,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

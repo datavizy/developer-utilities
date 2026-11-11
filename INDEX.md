@@ -24,3 +24,4 @@
 | 2026-11-06 | [CSV Profile: A First-Pass Data Quality Check](tools/2026-11-06/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-11-06 -->
 | 2026-11-09 | [Correlation Report](tools/2026-11-09/correlation-report/README.md) | statistical analysis and exploratory research | <!-- publication:2026-11-09 -->
 | 2026-11-10 | [CSV Visualizer](tools/2026-11-10/csv-visualize/README.md) | data visualization and scientific communication | <!-- publication:2026-11-10 -->
+| 2026-11-11 | [CSV Numeric Summary and Bootstrap Mean Interval](tools/2026-11-11/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-11-11 -->
