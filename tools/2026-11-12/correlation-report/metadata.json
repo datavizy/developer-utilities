@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Rust to the Browser: Making Scientific Computation Portable",
+  "article": "articles/2026-11-12-rust-webassembly-scientific-computing.md",
+  "utility_kind": "correlation-report",
+  "utility_title": "Correlation Report",
+  "utility_use_case": "A researcher receives a CSV of paired sensor readings and wants a quick, repeatable summary before making a visualization. They select the predictor and response headers, run the command, and retain the JSON output alongside the input and analysis notes. The pair count and omitted-row count help check data completeness, while the correlation and fitted line provide descriptive starting points for further investigation. The report does not replace plotting, scientific judgment, or inferential analysis.",
+  "domain": "statistical analysis and exploratory research",
+  "tags": [
+    "statistics",
+    "data-visualization",
+    "rust",
+    "webassembly",
+    "reproducible-research"
+  ],
+  "source": {
+    "book_label": "Rust Fundamentals for Data Science- An Introductory Guide",
+    "section_title": "1 => 1,",
+    "book_sha256": "c496159505445c6e8257407be4c7b621dfe5ea78f74a31f553659e286bcfed18",
+    "excerpt_sha256": "7cb768e802ca320ed746224a949ded4f1db95dd0b9c512e5c6de4e32786940ea",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_04265b62c373d1e6016af5f0cb69c087d0ac5e2e833117316d",
+    "usage": {
+      "input_tokens": 2796,
+      "input_tokens_details": {
+        "cache_write_tokens": 2793,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3708,
+      "output_tokens_details": {
+        "reasoning_tokens": 383
+      },
+      "total_tokens": 6504
+    },
+    "generated_at": "2026-11-12T17:01:43.978287+00:00",
+    "estimated_standard_usd": 0.0021336,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0ef3c4fd572704fc016af5f0f88ed487d0ae20e0d3e78ae2cd",
+      "usage": {
+        "input_tokens": 5944,
+        "input_tokens_details": {
+          "cache_write_tokens": 5941,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1351,
+        "output_tokens_details": {
+          "reasoning_tokens": 821
+        },
+        "total_tokens": 7295
+      },
+      "reviewed_at": "2026-11-12T17:02:03.530596+00:00",
+      "summary": "Corrected the centered cross-product, correlation, fitted line, prediction residual, and exercise answer for the supplied paired measurements.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "$S_{xy}=-2.25-0.25+0.75+0.75=-1$.",
+          "new": "$S_{xy}=2.25+0.25+0.75+0.75=4$."
+        },
+        {
+          "field": "article_markdown",
+          "old": "r=\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}=\\frac{-1}{\\sqrt{25}}=-0.2.",
+          "new": "r=\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}=\\frac{4}{\\sqrt{25}}=0.8."
+        },
+        {
+          "field": "article_markdown",
+          "old": "The least-squares slope is $b_1=S_{xy}/S_{xx}=-0.2$, and the intercept is $b_0=\\bar{y}-b_1\\bar{x}=3.5-(-0.2)(2.5)=4$. The fitted line is $\\hat{y}=4-0.2x$. At $x=3$, it predicts $3.4$, while the observed value is $5$, a residual of $1.6$.",
+          "new": "The least-squares slope is $b_1=S_{xy}/S_{xx}=0.8$, and the intercept is $b_0=\\bar{y}-b_1\\bar{x}=3.5-(0.8)(2.5)=1.5$. The fitted line is $\\hat{y}=1.5+0.8x$. At $x=3$, it predicts $3.9$, while the observed value is $5$, a residual of $1.1$."
+        },
+        {
+          "field": "article_markdown",
+          "old": "Neither changes. The intercept increases by 10, from 4 to 14.",
+          "new": "Neither changes. The intercept increases by 10, from 1.5 to 11.5."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0012699
+    }
+  },
+  "validation": {
+    "article_words": 1247,
+    "glossary_terms": 9,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
