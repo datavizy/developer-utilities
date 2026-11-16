@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Clusters Are Evidence, Not Verdicts",
+  "article": "articles/2026-11-16-clusters-are-evidence-not-verdicts.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A First Pass at Data Quality",
+  "utility_use_case": "A researcher receives a CSV of repeated field measurements and wants to inspect blanks, inconsistent row widths, and basic numeric ranges before plotting or clustering. Running the profile provides a compact, reproducible inventory that can guide a separate data-cleaning review. It does not decide which rows to discard, impute missing values, or establish that any resulting clusters are scientifically meaningful.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "clustering",
+    "statistics",
+    "data-visualization",
+    "reproducibility",
+    "data-quality",
+    "csv"
+  ],
+  "source": {
+    "book_label": "An Introduction to Statistical Learning  with Applications in R",
+    "section_title": "401 A Tempered Approach to Interpreting the Results of Clustering",
+    "book_sha256": "549689d1fa63f568000fef9267fa6a9133851ddf17ad0d9537bfaf47ae9d0159",
+    "excerpt_sha256": "5e5f00e86ec0c6b7a8cd35edd42967fd1c09f7aad90c19db27ba78ef3a23a7c6",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_02ddf24ef6731390016afb36d7c9cc87d09989684ffdafa037",
+    "usage": {
+      "input_tokens": 7816,
+      "input_tokens_details": {
+        "cache_write_tokens": 7813,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7813
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3683,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 11499
+    },
+    "generated_at": "2026-11-16T17:01:52.271886+00:00",
+    "estimated_standard_usd": 0.0026230999999999997,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b73941e8278f612016afb3700c14487d0b6027dd366383f61",
+      "usage": {
+        "input_tokens": 11256,
+        "input_tokens_details": {
+          "cache_write_tokens": 11253,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 11253
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 2242,
+        "output_tokens_details": {
+          "reasoning_tokens": 1940
+        },
+        "total_tokens": 13498
+      },
+      "reviewed_at": "2026-11-16T17:02:19.553808+00:00",
+      "summary": "Corrected the example’s standardization claim, clarified that ragged-row numbers count logical CSV records rather than physical lines, documented how blank lines are treated, and noted the floating-point sum overflow limitation.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "Standardized values have mean zero and standard deviation one within this small example.",
+          "new": "The coordinates are on standardized scales, but they are illustrative and do not have exact mean zero and standard deviation one within these six stations."
+        },
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` lists their one-based file line numbers, beginning with line 2 for the first data record.",
+          "new": "`ragged_rows` lists their one-based CSV record numbers, beginning with record 2 for the first data record; record 1 is the header."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Blank lines are handled according to that reader's default behavior.",
+          "new": "A blank physical line outside a quoted field is read as an empty record and counted as ragged; a blank line inside a quoted field is part of that field."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The mean is the numeric sum divided by the numeric count.",
+          "new": "The mean is the numeric sum divided by the numeric count. If that sum overflows floating-point range, the utility reports an error instead of producing a JSON profile."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0022466000000000005
+    }
+  },
+  "validation": {
+    "article_words": 1561,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
