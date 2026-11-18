@@ -27,3 +27,4 @@
 | 2026-11-11 | [CSV Numeric Summary and Bootstrap Mean Interval](tools/2026-11-11/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-11-11 -->
 | 2026-11-12 | [Correlation Report](tools/2026-11-12/correlation-report/README.md) | statistical analysis and exploratory research | <!-- publication:2026-11-12 -->
 | 2026-11-16 | [CSV Profile: A First Pass at Data Quality](tools/2026-11-16/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-11-16 -->
+| 2026-11-18 | [CSV Statistics and Bootstrap Interval Utility](tools/2026-11-18/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-11-18 -->
