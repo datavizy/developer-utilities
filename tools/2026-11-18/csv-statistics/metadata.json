@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Business Questions to Useful Data Evidence",
+  "article": "articles/2026-11-18-business-questions-data-evidence.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "CSV Statistics and Bootstrap Interval Utility",
+  "utility_use_case": "A lab analyst receives a CSV of sensor readings and needs a quick, reproducible summary before preparing a report. The analyst confirms that each row represents one independent reading, checks how blanks and malformed values are counted, then runs `bash csv-statistics.sh --file measurements.csv --column value --seed 42`. The JSON provides the usable sample size, basic descriptive statistics, and a percentile bootstrap interval for the mean. The seed, input file, and command can be recorded alongside the report for repeatability. The interval describes resampling variability under the observed values; it does not validate sensor calibration, establish representativeness, or support a causal claim.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "data-science",
+    "business-analytics",
+    "reproducibility",
+    "bootstrap"
+  ],
+  "source": {
+    "book_label": "Data Science for Dummies, 2nd Edition",
+    "section_title": "Chapter 3 Applying Data-Driven",
+    "book_sha256": "f2509c78025361ff6069320bcb68c144ba22493071d92dad6426aa71ccd0a811",
+    "excerpt_sha256": "4cb2f8dd6c02cf2f2f146eb8ef75d52daaa515b219458a85889db4e812883485",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_066c9949e6138d12016afdd9ca682887d085e1fac2a689b181",
+    "usage": {
+      "input_tokens": 2121,
+      "input_tokens_details": {
+        "cache_write_tokens": 2118,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2118
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3769,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 5890
+    },
+    "generated_at": "2026-11-18T17:01:36.755001+00:00",
+    "estimated_standard_usd": 0.0020966,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_051c303f936d5535016afdd9f0fa6c87d0a51fecc34b1ff277",
+      "usage": {
+        "input_tokens": 5602,
+        "input_tokens_details": {
+          "cache_write_tokens": 5599,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 5599
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1306,
+        "output_tokens_details": {
+          "reasoning_tokens": 1212
+        },
+        "total_tokens": 6908
+      },
+      "reviewed_at": "2026-11-18T17:01:53.560329+00:00",
+      "summary": "The worked calculations and utility documentation match the supplied data and executable source. The bootstrap caveat now also names dependent observations.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "biased sampling, missing-not-at-random data, confounding",
+          "new": "biased sampling, dependent observations, missing-not-at-random data, confounding"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0012132
+    }
+  },
+  "validation": {
+    "article_words": 1563,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
