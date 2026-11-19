@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Arrays to Evidence: Building a Reproducible Visualization Workflow",
+  "article": "articles/2026-11-19-arrays-to-reproducible-visualization.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "csv-visualize: Labeled CSV plots from the command line",
+  "utility_use_case": "A researcher receives a CSV export of paired sensor readings and wants a quick visual check before deciding whether the dataset merits deeper analysis. `csv-visualize` can create a labeled scatter plot in an automated, headless workflow and print counts of included and omitted rows. The saved chart supports inspection and communication, while the explicit omission count helps the researcher notice data-quality issues. The plot remains descriptive: it cannot establish that one measurement causes another or supply inferential results.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "data-visualization",
+    "statistics",
+    "python",
+    "reproducibility",
+    "scientific-computing"
+  ],
+  "source": {
+    "book_label": "Python data science cookbook - over 60 practical recipes",
+    "section_title": "Chapter 2. Python Environments",
+    "book_sha256": "8fddcf90aa35438b090a1f7fa8ed74f1971a7f372793f7e4a0367f2803435d81",
+    "excerpt_sha256": "071957cbd8b04fc9fb2eb317ea4abccbf937d36d2deda3b80baf9b2aae1333cb",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0f2f498627bdc74f016aff2b5db87c87d0b12c123d23f66d82",
+    "usage": {
+      "input_tokens": 6284,
+      "input_tokens_details": {
+        "cache_write_tokens": 6281,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6281
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3634,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 9918
+    },
+    "generated_at": "2026-11-19T17:01:57.032684+00:00",
+    "estimated_standard_usd": 0.0024454,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0865c4837d34bdad016aff2b85a2fc87d0baa1965bc114b36e",
+      "usage": {
+        "input_tokens": 9817,
+        "input_tokens_details": {
+          "cache_write_tokens": 9814,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 9814
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1435,
+        "output_tokens_details": {
+          "reasoning_tokens": 1324
+        },
+        "total_tokens": 11252
+      },
+      "reviewed_at": "2026-11-19T17:02:17.148957+00:00",
+      "summary": "Corrected the README’s description of PNG metadata handling. The worked sums, mean, minimum, and maximum are correct; the remaining article and utility claims checked against the source excerpt and executable are accurate.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "PNG output uses Matplotlib's default metadata behavior except for the explicitly supplied empty metadata dictionary.",
+          "new": "PNG output passes an empty metadata dictionary to Matplotlib."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0016992
+    }
+  },
+  "validation": {
+    "article_words": 1531,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
