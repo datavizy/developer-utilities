@@ -29,3 +29,4 @@
 | 2026-11-16 | [CSV Profile: A First Pass at Data Quality](tools/2026-11-16/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-11-16 -->
 | 2026-11-18 | [CSV Statistics and Bootstrap Interval Utility](tools/2026-11-18/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-11-18 -->
 | 2026-11-19 | [csv-visualize: Labeled CSV plots from the command line](tools/2026-11-19/csv-visualize/README.md) | data visualization and scientific communication | <!-- publication:2026-11-19 -->
+| 2026-11-20 | [CSV Profile: A Small First Pass on Data Quality](tools/2026-11-20/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-11-20 -->
