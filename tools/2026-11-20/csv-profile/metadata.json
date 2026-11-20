@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Eigenvalues as Data Directions: From Matrix Structure to Trustworthy Profiles",
+  "article": "articles/2026-11-20-eigenvalues-data-directions-trustworthy-profiles.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A Small First Pass on Data Quality",
+  "utility_use_case": "Before calculating a covariance matrix for a sensor study, a researcher runs `csv-profile` on the exported measurements. The JSON report exposes blank cells, non-finite values that will not enter numeric summaries, and rows whose field counts do not match the header. The researcher can investigate these records and document any cleaning before constructing the analysis matrix. This prevents a basic file-shape problem from being mistaken for a mathematical or scientific result. The utility does not build the covariance matrix or assess the study design.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "linear-algebra",
+    "eigenvalues",
+    "data-quality",
+    "statistics",
+    "csv",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "Linear Algebra_ Key Ideas and Methods for a First Course -- Haiyan Tian -- 2025",
+    "section_title": "Selected body passage",
+    "book_sha256": "b6adc1ec5d514f18a335875f409eec7a2aeec09613b6392c6fbbb5666e757762",
+    "excerpt_sha256": "59d08793e4743cf3a113e84004e9e4498509f3ad6da82cd4f884b11776352646",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_07e5cbae3ce08296016b007ccbf7a487d0968d70ccccafd3dc",
+    "usage": {
+      "input_tokens": 7596,
+      "input_tokens_details": {
+        "cache_write_tokens": 7593,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7593
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4056,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 11652
+    },
+    "generated_at": "2026-11-20T17:01:31.938942+00:00",
+    "estimated_standard_usd": 0.0027876,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b2dd0e64a07f9cf016b007cecaf8087d0809410b0344eda2a",
+      "usage": {
+        "input_tokens": 11429,
+        "input_tokens_details": {
+          "cache_write_tokens": 11426,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 11426
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 2179,
+        "output_tokens_details": {
+          "reasoning_tokens": 1789
+        },
+        "total_tokens": 13608
+      },
+      "reviewed_at": "2026-11-20T17:01:55.138196+00:00",
+      "summary": "Corrected CSV record-number terminology, documented argparse's help options and numeric-sum overflow, and accounted for current-record memory in the utility's space bound.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` lists one-based CSV line numbers whose field count differs from the header.",
+          "new": "`ragged_rows` lists one-based logical CSV record numbers, with the header as record 1, whose field count differs from the header."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The only supported command-line option is `--file`, and it is required.",
+          "new": "The supported options are `--file` (required to generate a report) and argparse's `-h`/`--help`."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Means and extrema are descriptive summaries of the finite values accepted as numeric; they do not support significance or causal claims.",
+          "new": "Means and extrema are descriptive summaries of the finite values accepted as numeric; they do not support significance or causal claims. Extremely large finite values can overflow the accumulated sum and prevent report generation."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Space use is $O(C+K)$, where $K$ is the number of ragged-row line numbers retained.",
+          "new": "Space use is $O(C+K+W)$, where $K$ is the number of ragged-row record numbers retained and $W$ is the size of the current parsed record."
+        }
+      ],
+      "glossary_edits": [
+        {
+          "term": "Ragged row",
+          "definition": "A CSV data record whose number of parsed fields differs from the number of header fields. `csv-profile` records its one-based logical CSV record number, counting the header as record 1, not its physical text-line number, and skips it when computing per-column missing and numeric summaries."
+        }
+      ],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0022324000000000003
+    }
+  },
+  "validation": {
+    "article_words": 1625,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
