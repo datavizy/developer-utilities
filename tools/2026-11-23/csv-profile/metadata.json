@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Inner Products: The Geometry Hiding Inside Data",
+  "article": "articles/2026-11-23-inner-products-geometry-data.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "csv-profile",
+  "utility_use_case": "Before plotting or fitting a model to a laboratory export, run csv-profile to find blank fields, malformed-width records, and columns containing finite numeric values. Save the JSON output alongside the source data and analysis notes. This provides a repeatable structural and descriptive check, while leaving unit validation, outlier review, statistical inference, and scientific interpretation to subsequent steps.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "linear-algebra",
+    "statistics",
+    "data-quality",
+    "csv",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "A Course in Linear Algebra -- Raju K_ George, Abhijith Ajayakumar -- Springer Nature",
+    "section_title": "5.2 Inner Product Spaces",
+    "book_sha256": "6760631540d092bec689e2bb5ea7e27f7b87f863a41eae1f9501ef0367029792",
+    "excerpt_sha256": "304d2501fa94bc8aab2c2635a190af67f12ec41c1cd07d8dd7d86374769736fb",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_022f6c492797412b016b047196f15487d0aac80955aad145c9",
+    "usage": {
+      "input_tokens": 5814,
+      "input_tokens_details": {
+        "cache_write_tokens": 5811,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5811
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4498,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 10312
+    },
+    "generated_at": "2026-11-23T17:02:53.940696+00:00",
+    "estimated_standard_usd": 0.0028304000000000003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e4b83228ce5ea64016b0471be78c087d0ab576e02dd24fb8e",
+      "usage": {
+        "input_tokens": 9947,
+        "input_tokens_details": {
+          "cache_write_tokens": 9944,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 9944
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 2351,
+        "output_tokens_details": {
+          "reasoning_tokens": 1981
+        },
+        "total_tokens": 12298
+      },
+      "reviewed_at": "2026-11-23T17:03:16.262717+00:00",
+      "summary": "Clarified that reported CSV positions count logical records, including the header, and documented the numeric-sum overflow behavior. Corrected the glossary to distinguish orthogonality from linear independence.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "`rows` counts data records after the header, using one-based CSV record numbering for reported row positions (the first data record is row 2).",
+          "new": "`rows` counts data records after the header. Reported positions use one-based logical CSV record numbers, including the header, not physical text-line numbers, so quoted fields with embedded newlines count as one record (the first data record is row 2)."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The mean is their arithmetic mean, or `null` when there are none; minimum and maximum are also `null` when no finite numeric value exists.",
+          "new": "The mean is their arithmetic mean when the accumulated sum stays finite, or `null` when there are none; minimum and maximum are also `null` when no finite numeric value exists. If summing finite values overflows to infinity, JSON output fails and the program reports an error."
+        }
+      ],
+      "glossary_edits": [
+        {
+          "term": "Orthogonality",
+          "definition": "A relation between vectors $x$ and $y$ for which $\\langle x,y\\rangle=0$. In Euclidean space this corresponds to perpendicular directions; in more general spaces it means their inner product is zero and does not, by itself, imply linear independence."
+        }
+      ],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0021701999999999997
+    }
+  },
+  "validation": {
+    "article_words": 1590,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
