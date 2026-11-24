@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "A Regression Line Is a Summary, Not a Story",
+  "article": "articles/2026-11-24-regression-line-summary-not-story.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "CSV Statistics and Reproducible Bootstrap Mean Interval",
+  "utility_use_case": "A researcher has a CSV of repeated instrument readings and wants a quick, reviewable summary before fitting a model that relates the readings to experimental settings. They run the tool with an explicit seed, retain the JSON output alongside the source CSV, and inspect missing and invalid counts before proceeding. The bootstrap interval provides a descriptive estimate of uncertainty in the column mean under resampling of the observed readings. It does not replace plots, study-design checks, or regression diagnostics.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "statistics",
+    "regression",
+    "data-visualization",
+    "reproducibility",
+    "bootstrap"
+  ],
+  "source": {
+    "book_label": "Regression- Financial Insights with Excel & Python",
+    "section_title": "Chapter 3: Simple Linear Regression",
+    "book_sha256": "fdd6bfd586c9f95f5986023554123e4192b1582ce145b4c7cccafe21dcdf0a0d",
+    "excerpt_sha256": "eba8b02377f1b63ff6ce6fe955c66f0bac989d9d50e32683d17c30f1de45b11a",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0bc4af04d2499df4016b05c2e4db3487d0a4990031b44f26e2",
+    "usage": {
+      "input_tokens": 5759,
+      "input_tokens_details": {
+        "cache_write_tokens": 5756,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5756
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4150,
+      "output_tokens_details": {
+        "reasoning_tokens": 328
+      },
+      "total_tokens": 9909
+    },
+    "generated_at": "2026-11-24T17:02:15.337244+00:00",
+    "estimated_standard_usd": 0.0026509000000000003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b5e51b40f7d1591016b05c317da4487d08c438b1b16aa4375",
+      "usage": {
+        "input_tokens": 9396,
+        "input_tokens_details": {
+          "cache_write_tokens": 9393,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 9393
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1282,
+        "output_tokens_details": {
+          "reasoning_tokens": 1135
+        },
+        "total_tokens": 10678
+      },
+      "reviewed_at": "2026-11-24T17:02:29.717247+00:00",
+      "summary": "The worked regression example and the documented bootstrap method, limits, and CLI defaults match the supplied data and executable source. The README overstated how CSV parsing errors are handled: csv.Error is not caught by the utility.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "A column name that does not exist, file or parsing errors, and a resample count outside 100 to 10,000 cause an argument error.",
+          "new": "A column name that does not exist, a file access error, and a resample count outside 100 to 10,000 cause an argument error."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015806
+    }
+  },
+  "validation": {
+    "article_words": 1520,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
