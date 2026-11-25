@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Tuning Boosted Trees Without Fooling Yourself",
+  "article": "articles/2026-11-25-tuning-boosted-trees-without-fooling-yourself.md",
+  "utility_kind": "csv-visualize",
+  "utility_title": "CSV Plot Exporter",
+  "utility_use_case": "A researcher tuning a boosted-tree model can export a scatter plot to inspect two numeric measurements for unusual ranges or structure, or a histogram to examine the distribution of one measurement. The utility's JSON reports how many rows were plotted and omitted, helping the researcher notice incomplete or nonfinite values before modeling. Later, the researcher can visualize cross-validation results using prepared CSV data, while keeping the statistical interpretation grounded in the validation design rather than the plot alone.",
+  "domain": "data visualization and scientific communication",
+  "tags": [
+    "statistics",
+    "machine-learning",
+    "cross-validation",
+    "data-visualization",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "Practical Statistics for Data Scientists - 50+ Essential -- Peter Bruce; Peter C. Bruce; Andrew Bruce; Peter Gedeck",
+    "section_title": "9 0.9 12 38.18",
+    "book_sha256": "b6f408a8a210512210efb7d4ae6208d3d8b11847a8101a2a3327fe417165b0db",
+    "excerpt_sha256": "8d5ee78faecfcbaea94bafda0916d6106dea868413d4deba83305da2f966885a",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0adc00f05ca21cb2016b071448f87087d0bc325a7d21663e6b",
+    "usage": {
+      "input_tokens": 2517,
+      "input_tokens_details": {
+        "cache_write_tokens": 2514,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2514
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4119,
+      "output_tokens_details": {
+        "reasoning_tokens": 310
+      },
+      "total_tokens": 6636
+    },
+    "generated_at": "2026-11-25T17:01:31.686245+00:00",
+    "estimated_standard_usd": 0.0023112,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b1365a5034d466d016b07146c241887d0b1e574b3e32ae84e",
+      "usage": {
+        "input_tokens": 6156,
+        "input_tokens_details": {
+          "cache_write_tokens": 6153,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 6153
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1490,
+        "output_tokens_details": {
+          "reasoning_tokens": 1385
+        },
+        "total_tokens": 7646
+      },
+      "reviewed_at": "2026-11-25T17:01:46.732436+00:00",
+      "summary": "Corrected the histogram instructions to reflect that the CLI accepts `--y` but does not use it for histograms.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Create a histogram by selecting its kind. Do not provide `--y` for a histogram:",
+          "new": "Create a histogram by selecting its kind. The program ignores `--y` for histograms:"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0013606
+    }
+  },
+  "validation": {
+    "article_words": 1525,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
