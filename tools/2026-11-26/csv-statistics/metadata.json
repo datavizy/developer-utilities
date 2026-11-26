@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "When Correlation Makes Data Smaller: PCA for Signals, Noise, and Features",
+  "article": "articles/2026-11-26-pca-correlated-signals.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "CSV Numeric Summary and Bootstrap Mean Interval",
+  "utility_use_case": "A researcher receives a CSV export of repeated instrument readings and wants a reviewable first-pass summary before building a broader analysis. Committing the file, the exact command, and its JSON output makes the calculation easy to rerun and inspect. If readings are serially dependent, however, the ordinary row-resampling interval may be inappropriate; the scientist must choose a dependence-aware method rather than treating this utility's interval as a universal confidence statement.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "statistics",
+    "data-visualization",
+    "signal-processing",
+    "pca",
+    "reproducibility",
+    "bootstrap"
+  ],
+  "source": {
+    "book_label": "Fundamentals of Linear Algebra for Signal Processing -- James Reilly -- 2024",
+    "section_title": "Selected body passage",
+    "book_sha256": "b950d742e30ef25e5a62684bebce5020eb59cf2bb5a2b613055cfeeaae26aeec",
+    "excerpt_sha256": "3ef73c8c1819d687942e7e3faf459397aa32bab36b68a540d0030514644d7f06",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_023ead8c654f22e8016b0865c1ff1487d0b34131653ebd17a8",
+    "usage": {
+      "input_tokens": 5071,
+      "input_tokens_details": {
+        "cache_write_tokens": 5068,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5068
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3901,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 8972
+    },
+    "generated_at": "2026-11-26T17:01:18.495524+00:00",
+    "estimated_standard_usd": 0.0024576,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_01dbdc19ee47e085016b0865df25c087d0b6f350d89504e3c8",
+      "usage": {
+        "input_tokens": 8726,
+        "input_tokens_details": {
+          "cache_write_tokens": 8723,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 8723
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1282,
+        "output_tokens_details": {
+          "reasoning_tokens": 1230
+        },
+        "total_tokens": 10008
+      },
+      "reviewed_at": "2026-11-26T17:01:31.779267+00:00",
+      "summary": "No essential technical corrections found. The worked calculations and the utility documentation agree with the supplied data and executable source.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015136
+    }
+  },
+  "validation": {
+    "article_words": 1679,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
