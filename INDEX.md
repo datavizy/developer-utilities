@@ -34,3 +34,4 @@
 | 2026-11-24 | [CSV Statistics and Reproducible Bootstrap Mean Interval](tools/2026-11-24/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-11-24 -->
 | 2026-11-25 | [CSV Plot Exporter](tools/2026-11-25/csv-visualize/README.md) | data visualization and scientific communication | <!-- publication:2026-11-25 -->
 | 2026-11-26 | [CSV Numeric Summary and Bootstrap Mean Interval](tools/2026-11-26/csv-statistics/README.md) | statistics and reproducible research | <!-- publication:2026-11-26 -->
+| 2026-11-27 | [Correlation Report](tools/2026-11-27/correlation-report/README.md) | statistical analysis and exploratory research | <!-- publication:2026-11-27 -->

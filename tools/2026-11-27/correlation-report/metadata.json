@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "From Graphs to Vectors: What Embeddings Keep, and What They Leave Behind",
+  "article": "articles/2026-11-27-graphs-to-vectors-embeddings.md",
+  "utility_kind": "correlation-report",
+  "utility_title": "Correlation Report",
+  "utility_use_case": "Use this utility during exploratory analysis to check the direction and strength of linear association between two measured variables, and to obtain a baseline least-squares line before making a plot or designing a more careful model. For example, a researcher might compare paired instrument readings from two sensors and use the output to identify a relationship worth inspecting. It is a descriptive screening step only: missing or nonfinite pairs are omitted, and the result does not establish significance or causality.",
+  "domain": "statistical analysis and exploratory research",
+  "tags": [
+    "graph-ml",
+    "embeddings",
+    "neo4j",
+    "machine-learning",
+    "data-science",
+    "reproducibility"
+  ],
+  "source": {
+    "book_label": "Graph Data Science with Neo4j _ Learn How to Use Neo4j 5 -- Scifo, Estelle -- 1st edition, Birmingham, UK, 2023",
+    "section_title": "7 Automatically Extracting Features with Graph Embeddings for Machine Learning",
+    "book_sha256": "703510ad6b29843be454d8bb42ab81b11a3e64bc0799eeda4d5bdb7dd280d08f",
+    "excerpt_sha256": "1bb51c1a716970f269ab4129223626b86f4d8b189f196a4ddd3f6a776b50bf69",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_053330b794910a91016b09b73f5f3087d0884c783b2a4ba719",
+    "usage": {
+      "input_tokens": 5173,
+      "input_tokens_details": {
+        "cache_write_tokens": 5170,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5170
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4496,
+      "output_tokens_details": {
+        "reasoning_tokens": 268
+      },
+      "total_tokens": 9669
+    },
+    "generated_at": "2026-11-27T17:01:20.683843+00:00",
+    "estimated_standard_usd": 0.0027653,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_07f7531ef6213671016b09b761504887d0a4720e4b892c5f5c",
+      "usage": {
+        "input_tokens": 9218,
+        "input_tokens_details": {
+          "cache_write_tokens": 9215,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 9215
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1172,
+        "output_tokens_details": {
+          "reasoning_tokens": 1119
+        },
+        "total_tokens": 10390
+      },
+      "reviewed_at": "2026-11-27T17:01:32.091463+00:00",
+      "summary": "No essential technical corrections found. The worked examples recompute correctly, and the README matches the executable’s documented behavior.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015078000000000001
+    }
+  },
+  "validation": {
+    "article_words": 1980,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
